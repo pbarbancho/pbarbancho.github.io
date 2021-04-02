@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Pablo Barbancho Martín</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
+    <title>Economy | Pablo Barbancho Martín</title>
+    <link>/category/economy/</link>
+      <atom:link href="/category/economy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Economy</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
-      <title>Posts</title>
-      <link>/post/</link>
+      <title>Economy</title>
+      <link>/category/economy/</link>
     </image>
     
     <item>
@@ -69,16 +69,6 @@
 &lt;p&gt;$$ \langle \bar \Delta (n) \rangle = Q (N_d, {q_i }) \varphi_d (n). \tag {15} $$&lt;/p&gt;
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;We have been able to obtain a model that describes the general characteristics of supply and demand. Although this depends to a large extent on the probability distribution assigned to the $p_i$ , it constitutes a powerful framework when it comes to research the behaviour of collective supply and demand in a given market, as well as in the dynamics that are derived that market from these. In future publications, we will obtain the supply and demand curves that derive from different probability distributions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Demo post</title>
-      <link>/post/demo-post/</link>
-      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/post/demo-post/</guid>
-      <description>&lt;p&gt;This post is just a demo. Here is a $\LaTeX$ equation.
-$$\int 3x^2dx=x^3+C.$$&lt;/p&gt;
 </description>
     </item>
     

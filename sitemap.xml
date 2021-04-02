@@ -20,10 +20,25 @@
     <loc>/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/demo-post/</loc>
-    <lastmod>2021-03-24T13:20:44+01:00</lastmod>
+    <loc>/post/a-toy-model-for-supply-and-demand/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
+  </url><url>
+    <loc>/category/economy/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
   </url><url>
     <loc>/post/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
+  </url><url>
+    <loc>/tag/supply-and-demand/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-02T00:41:59+02:00</lastmod>
+  </url><url>
+    <loc>/post/demo-post/</loc>
     <lastmod>2021-03-24T13:20:44+01:00</lastmod>
   </url><url>
     <loc>/courses/</loc>
@@ -51,9 +66,6 @@
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/slides/</loc>
@@ -93,7 +105,5 @@
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/admin/</loc>
-  </url><url>
-    <loc>/categories/</loc>
   </url>
 </urlset>
