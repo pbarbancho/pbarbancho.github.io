@@ -33,8 +33,7 @@
   
     
   
-  <meta name="description" content="% A toy model for supply and demand % Pablo Barbancho Martín % April 1st, 2021
-Abstract A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good." />
+  <meta name="description" content="A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good. The model obtained shows the expected characteristics of supply and demand curves and allows further development in market dynamics." />
 
   
   <link rel="alternate" hreflang="en-us" href="/post/a-toy-model-for-supply-and-demand/" />
@@ -60,7 +59,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   
   
   
-    <meta name="theme-color" content="#1565c0" />
+    <meta name="theme-color" content="#3f51b5" />
   
 
   
@@ -252,7 +251,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.05597aa6a76faca3096d08b97f4872b8.css" />
+  <link rel="stylesheet" href="/css/wowchemy.e63942f9000e97b3e645a79fc8997aa2.css" />
 
   
 
@@ -299,8 +298,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   <meta property="og:site_name" content="Pablo Barbancho Martín" />
   <meta property="og:url" content="/post/a-toy-model-for-supply-and-demand/" />
   <meta property="og:title" content="A toy model for supply and demand | Pablo Barbancho Martín" />
-  <meta property="og:description" content="% A toy model for supply and demand % Pablo Barbancho Martín % April 1st, 2021
-Abstract A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good." /><meta property="og:image" content="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:description" content="A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good. The model obtained shows the expected characteristics of supply and demand curves and allows further development in market dynamics." /><meta property="og:image" content="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -353,7 +351,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
       "url": "/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "% A toy model for supply and demand % Pablo Barbancho Martín % April 1st, 2021\nAbstract A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good."
+  "description": "A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good. The model obtained shows the expected characteristics of supply and demand curves and allows further development in market dynamics."
 }
 </script>
 
@@ -373,7 +371,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1ef447ee997e6dde3a5b784161b7739b" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="35a4cb794a741159ac28abf3ce15d8e0" >
 
   
   
@@ -558,7 +556,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
         
           
           <li class="nav-item d-none d-lg-inline-flex">
-            <a class="nav-link" href="https://twitter.com/pbarbancho" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+            <a class="nav-link" href="https://twitter.com/pbarbancho_" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
               <i class="fab fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
@@ -655,7 +653,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    8 min read
+    7 min read
   </span>
   
 
@@ -689,58 +687,81 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   <div class="article-container">
 
     <div class="article-style">
-      <p>% A toy model for supply and demand
-% Pablo Barbancho Martín
-% April 1st, 2021</p>
-<h1 id="abstract">Abstract</h1>
+      
+<script src="/post/a-toy-model-for-supply-and-demand/index.en_files/header-attrs/header-attrs.js"></script>
+
+
 <p>A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good. The model obtained shows the expected characteristics of supply and demand curves and allows further development in market dynamics.</p>
-<h1 id="statement-of-the-problem">Statement of the problem</h1>
+<div id="statement-of-the-problem" class="section level1">
+<h1>Statement of the problem</h1>
 <p>We want to model the collective behaviour of a set of agents that participate in the buying and selling of a certain good. Each of these agents will buy or sell depending on whether the price reached by the good in question is a price they consider fair or not. Besides, this quantity does not have to be unique, depending on this price they may decide to buy or sell a larger or smaller quantity. Considering, for example, a seller agent, this follows a scheme such as this.</p>
-<p>Such an agent will decide to supply an amount of $c_1$ if the good reaches a price of $p_1$ , an amount of $c_2$ if it reaches a price of $p_2$ and so on. If we call $\lim_{i \rightarrow \infty} c_i = M$ and assuming that the higher the price, the greater the quantity supplied (law of supply), we can write the supply function as</p>
-<p>$$ o (p) = \sum_{i = 1} ^ M \theta (p-p_i), $$</p>
-<p>where $\theta(x)$ is the Heaviside step function given by</p>
-<p>$$ \theta (x) = \left{\begin{matrix} 0, &amp; \text{if } x &lt;0  \ 1, &amp; \text{if } x \geq 0 \end{matrix} \right. $$</p>
+<p>Such an agent will decide to supply an amount of <span class="math inline">\(c_1\)</span> if the good reaches a price of <span class="math inline">\(p_1\)</span>, an amount of <span class="math inline">\(c_2\)</span> if it reaches a price of <span class="math inline">\(p_2\)</span> and so on. If we call <span class="math inline">\(\lim_{i \rightarrow \infty} c_i = M\)</span> and assuming that the higher the price, the greater the quantity supplied (law of supply), we can write the supply function as</p>
+<p><span class="math display">\[o(p) = \sum_{i = 1} ^ M \theta (p-p_i),\tag{1}\]</span></p>
+<p>where <span class="math inline">\(\theta(x)\)</span> is the Heaviside step function given by</p>
+<p><span class="math display">\[\theta(x)=\left\{
+    \begin{array}{rr}
+    0, &amp; \text{if } x &lt;0  \\ 
+    1, &amp; \text{if } x \geq 0 
+    \end{array}
+    \right..
+\tag{2}
+\]</span></p>
 <p>In the case of a buyer agent, and taking into account the law of demand, it is only needed to change the sign of the argument of the Heaviside function to obtain</p>
-<p>$$ d(p) = \sum_{i = 1} ^ M \theta (p_i-p).$$</p>
-<p>With that said, our objective is, discarding the possibility of knowing the $p_i$ for all the participating agents, to obtain some functions $O (p)$ and $D (p)$ that describe the collective behaviour of the agents selling and buying, respectively, from the knowledge of the probability distribution of the $p_i$ .</p>
-<h1 id="previous-assumptions">Previous assumptions</h1>
-<p>In the first place, we are going to assume a number $N_o$ of agents that sell the good under study, as well as a number $N_d$ of agents that buy that same good. Besides, we assume the knowledge of the probability distributions $P_o (p_i)$ and $P_d (p_i)$ of the $p_i$ of both sellers and buyers as groups.</p>
+<p><span class="math display">\[d(p)=\sum_{i = 1}^M\theta(p_i-p).\tag{3}\]</span></p>
+<p>With that said, our objective is, discarding the possibility of knowing the <span class="math inline">\(p_i\)</span> for all the participating agents, to obtain some functions <span class="math inline">\(O (p)\)</span> and <span class="math inline">\(D (p)\)</span> that describe the collective behaviour of the agents selling and buying, respectively, from the knowledge of the probability distribution of the <span class="math inline">\(p_i\)</span>.</p>
+</div>
+<div id="previous-assumptions" class="section level1">
+<h1>Previous assumptions</h1>
+<p>In the first place, we are going to assume a number <span class="math inline">\(N_o\)</span> of agents that sell the good under study, as well as a number <span class="math inline">\(N_d\)</span> of agents that buy that same good. Besides, we assume the knowledge of the probability distributions <span class="math inline">\(P_o (p_i)\)</span> and <span class="math inline">\(P_d (p_i)\)</span> of the <span class="math inline">\(p_i\)</span> of both sellers and buyers as groups.</p>
 <p>We will also assume that the agents do not interact with each other, that is, there is no correlation between the quantities supplied (demanded) by the different agents.</p>
-<p>Finally, we will assume that a specific agent, given that at a particular price has sold (bought) a unit of the good, there is a probability $q_i$ that it will sell (buy) an additional unit and that this remains constant as we increase. the quantity supplied (demanded).</p>
-<h1 id="the-supply-case">The supply case</h1>
-<p>Let&rsquo;s start by dealing with the case of the offer. Given the functions $o_i (p)$ of each of the selling agents, total or aggregate supply will be given by</p>
-<p>$$ O (p) = \sum_ {i = 1} ^ {N_o} o_i (p). $$</p>
-<p>If we stop to think about the nature of prices $p$ , they represent the conversion factor, in terms of value, between a certain good and another that we consider as a standard. Therefore we will have $p \in \mathbb{Q}$ . But it is a known result that $\mathbb{Q}$ is a countable set, so we can put $\mathbb{Q}$ in one-to-one correspondence with $\mathbb{N}$ . Let&rsquo;s say that we establish this correspondence through $\phi: \mathbb{Q} \rightarrow \mathbb{N}$ . In this way, we are going to make a variable change, and we are going to study supply as a function of $n = \phi (p)$ , having $p = \phi^{- 1} (n)$ .</p>
-<p>Thus, we will have a new set of functions $\omega_i (n) = o_i \circ \phi ^ {- 1} (n)$ , as well as a new probability distribution $\Pi_o (n_i) = P_o \circ \phi ^ {-1} (n_i)$ , where $n_i = \phi (p_i)$ . Similarly, the aggregate supply will be represented by</p>
-<p>$$ \Omega (n) = \sum ^ {N_o} _ {i = 1} \omega_i (n).$$</p>
-<p>Remembering how we define the $o_i (p)$ from the Heaviside step function, we have</p>
-<p>$$ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (\phi ^ {- 1} (n) - \phi ^ {- 1} (n_ {ij})),$$</p>
-<p>where $n_{ij} = \phi (p_{ij})$ . But since $\phi$ is a bijection, we will have $\phi^{- 1} (n) = \phi^{- 1} (n_{ij})$ , which implies that $n = n_ {ij}$ , and therefore we can rewrite (6) as</p>
-<p>$$ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (n-n_ {ij}).$$</p>
-<p>However, knowing the $m_i$ of each of the agents that negotiate in the market seems like a vast task in the first instance. For this reason, we are going to lower our level of knowledge about the agents and we are going to assume that each of them has a probability $q_i$ of selling an additional unit and that this remains constant as we increase the quantity supplied.</p>
-<p>Thus, we are going to define a function $\bar \omega_i (n)$ that will be given by</p>
-<p>$$ \bar \omega_i (n) = \sum_ {j = 0} ^ \infty (q_i) ^ j \theta (n-n_ {ij}),$$</p>
+<p>Finally, we will assume that a specific agent, given that at a particular price has sold (bought) a unit of the good, there is a probability <span class="math inline">\(q_i\)</span> that it will sell (buy) an additional unit and that this remains constant as we increase. the quantity supplied (demanded).</p>
+</div>
+<div id="the-supply-case" class="section level1">
+<h1>The supply case</h1>
+<p>Let’s start by dealing with the case of the offer. Given the functions <span class="math inline">\(o_i (p)\)</span> of each of the selling agents, total or aggregate supply will be given by</p>
+<p><span class="math display">\[O(p) = \sum_ {i = 1} ^ {N_o} o_i (p).\tag{4}\]</span></p>
+<p>If we stop to think about the nature of prices <span class="math inline">\(p\)</span>, they represent the conversion factor, in terms of value, between a certain good and another that we consider as a standard. Therefore we will have <span class="math inline">\(p \in \mathbb{Q}\)</span>. But it is a known result that <span class="math inline">\(\mathbb{Q}\)</span> is a countable set, so we can put <span class="math inline">\(\mathbb{Q}\)</span> in one-to-one correspondence with <span class="math inline">\(\mathbb{N}\)</span>. Let’s say that we establish this correspondence through <span class="math inline">\(\phi: \mathbb{Q} \rightarrow \mathbb{N}\)</span>. In this way, we are going to make a variable change, and we are going to study supply as a function of <span class="math inline">\(n = \phi (p)\)</span>, having <span class="math inline">\(p = \phi^{- 1} (n)\)</span>.</p>
+<p>Thus, we will have a new set of functions <span class="math inline">\(\omega_i (n) = o_i \circ \phi ^ {- 1} (n)\)</span>, as well as a new probability distribution <span class="math inline">\(\Pi_o (n_i) = P_o \circ \phi ^ {-1} (n_i)\)</span>, where <span class="math inline">\(n_i = \phi (p_i)\)</span>. Similarly, the aggregate supply will be represented by</p>
+<p><span class="math display">\[\Omega (n) = \sum ^ {N_o} _ {i = 1} \omega_i (n).\tag{5}\]</span></p>
+<p>Remembering how we define the <span class="math inline">\(o_i (p)\)</span> from the Heaviside step function, we have</p>
+<p><span class="math display">\[\omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (\phi ^ {- 1} (n) - \phi ^ {- 1} (n_ {ij})),\tag{6}\]</span></p>
+<p>where <span class="math inline">\(n_{ij} = \phi (p_{ij})\)</span>. But since <span class="math inline">\(\phi\)</span> is a bijection, we will have <span class="math inline">\(\phi^{- 1} (n) = \phi^{- 1} (n_{ij})\)</span>, which implies that <span class="math inline">\(n = n_ {ij}\)</span>, and therefore we can rewrite (6) as</p>
+<p><span class="math display">\[ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (n-n_ {ij}).\tag{7}\]</span></p>
+<p>However, knowing the <span class="math inline">\(m_i\)</span> of each of the agents that negotiate in the market seems like a vast task in the first instance. For this reason, we are going to lower our level of knowledge about the agents and we are going to assume that each of them has a probability <span class="math inline">\(q_i\)</span> of selling an additional unit and that this remains constant as we increase the quantity supplied.</p>
+<p>Thus, we are going to define a function <span class="math inline">\(\bar \omega_i (n)\)</span> that will be given by</p>
+<p><span class="math display">\[ \bar \omega_i (n) = \sum_ {j = 0} ^ \infty (q_i) ^ j \theta (n-n_ {ij}),\tag{8}\]</span></p>
 <p>through which we also define</p>
-<p>$$ \bar \Omega (n) = \sum_ {i = 1} ^ {N_o} \bar \omega_i (n),$$</p>
-<p>and we are going to establish, with no proof, that $\lim_{N_o \rightarrow \infty} \bar \Omega (n) = \Omega (n)$ . Thus, when $N_o$ is large enough, studying $\bar \Omega (n)$ will be almost equivalent to studying $\Omega (n)$ , and in particular $\langle \bar \Omega (n) \rangle = \langle \Omega (n) \rangle$ .</p>
-<p>Until now, implicitly, we have assumed that the $p_ {ij}$ (and consequently the $n_ {ij}$ ) are known, but the only thing we know is their probability distribution. Therefore, we are going to average $\bar \Omega (n)$ to eliminate this dependency on the $n_ {ij}$ . Since we have assumed that agents do not interact with each other, we will have</p>
-<p>$$ \langle \bar \Omega (n) \rangle = \sum_ {i = 1} ^ {N_o} \langle \bar \omega_i (n) \rangle.$$</p>
+<p><span class="math display">\[ \bar \Omega (n) = \sum_ {i = 1} ^ {N_o} \bar \omega_i (n),\tag{9}\]</span></p>
+<p>and we are going to establish, with no proof, that <span class="math inline">\(\lim_{N_o \rightarrow \infty} \bar \Omega (n) = \Omega (n)\)</span>. Thus, when <span class="math inline">\(N_o\)</span> is large enough, studying <span class="math inline">\(\bar \Omega (n)\)</span> will be almost equivalent to studying <span class="math inline">\(\Omega (n)\)</span>, and in particular <span class="math inline">\(\langle \bar \Omega (n) \rangle = \langle \Omega (n) \rangle\)</span>.</p>
+<p>Until now, implicitly, we have assumed that the <span class="math inline">\(p_ {ij}\)</span> (and consequently the <span class="math inline">\(n_ {ij}\)</span>) are known, but the only thing we know is their probability distribution. Therefore, we are going to average <span class="math inline">\(\bar \Omega (n)\)</span> to eliminate this dependency on the <span class="math inline">\(n_ {ij}\)</span>. Since we have assumed that agents do not interact with each other, we will have</p>
+<p><span class="math display">\[ \langle \bar \Omega (n) \rangle = \sum_ {i = 1} ^ {N_o} \langle \bar \omega_i (n) \rangle.\tag{10}\]</span></p>
 <p>Thus, taking (7) into account, we will have</p>
-<p>$$ \begin {matrix} \langle \bar \omega_i (n) \rangle &amp; = &amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \langle \theta (n-n_ {ij}) \rangle , \ &amp; = &amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}), \ \end {matrix} \tag {10} $$</p>
-<p>and since in general $n_ {ij} \in [0, \infty)$ , we will have $\sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}) = \sum_ {k = 0} ^ \infty \theta (n-k) \Pi_o (k)$ , but taking into account the definition of the step function, we will have $\sum_ {k = 0} ^ \infty \theta (n-k ) \Pi_o (k) = \sum_ {k = 0} ^ n \Pi_o (k)$ . In this way, we will have that (10) becomes</p>
-<p>$$ \langle \bar \omega_i (n) \rangle = (\sum_ {j = 0} ^ \infty (q_i) ^ j) (\sum_ {k = 0} ^ n \Pi_o (k)). \tag {11} $$</p>
-<p>Since $q_i$ represents a probability, it will take values between 0 and 1. Disregarding the case $q_i = 1$ we will have a geometric series of ratio $q_i$ , so (11) is equivalent to</p>
-<p>$$ \langle \bar \omega_i (n) \rangle = \dfrac {\sum_ {k = 0} ^ n \Pi_o (k)} {1-q_i}, \tag {12} $$</p>
+<p><span class="math display">\[
+\begin{aligned} 
+\langle \bar \omega_i (n) \rangle &amp; = &amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \langle \theta (n-n_ {ij})\rangle, 
+\\ &amp; = &amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}), \\ 
+\end{aligned} 
+\tag {11}
+\]</span></p>
+<p>and since in general <span class="math inline">\(n_ {ij} \in [0, \infty)\)</span>, we will have <span class="math inline">\(\sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}) = \sum_ {k = 0} ^ \infty \theta (n-k) \Pi_o (k)\)</span>, but taking into account the definition of the step function, we will have <span class="math inline">\(\sum_ {k = 0} ^ \infty \theta (n-k ) \Pi_o (k) = \sum_ {k = 0} ^ n \Pi_o (k)\)</span>. In this way, we will have that (11) becomes</p>
+<p><span class="math display">\[\langle \bar \omega_i (n) \rangle = (\sum_ {j = 0} ^ \infty (q_i) ^ j) (\sum_ {k = 0} ^ n \Pi_o (k)).\tag{12}\]</span></p>
+<p>Since <span class="math inline">\(q_i\)</span> represents a probability, it will take values between 0 and 1. Disregarding the case <span class="math inline">\(q_i = 1\)</span> we will have a geometric series of ratio <span class="math inline">\(q_i\)</span>, so (11) is equivalent to</p>
+<p><span class="math display">\[\langle \bar \omega_i (n) \rangle = \dfrac {\sum_ {k = 0} ^ n \Pi_o (k)} {1-q_i},\tag{13}\]</span></p>
 <p>that introduced in (9) leads us to</p>
-<p>$$ \langle\bar \Omega (n) \rangle = Q (N_o, {q_i }) \varphi_o (n), \tag {13} $$</p>
-<p>where $Q (N_o, {q_i }) = \sum_ {i = 1} ^ {N_o} \frac{1}{1-q_i}$ , whose minimum value is $N_o$ for the case in which all the $q_i$ are equal to 0 and tends to infinity when any of the $q_i$ goes to 1, and $\varphi_o (n) = \sum_ {k = 0} ^ n \Pi_o (k)$ , which tends to 0 when $n$ goes to 0, and goes to 1 when $n$ goes to infinity.</p>
-<h1 id="the-demand-case">The demand case</h1>
-<p>Having dealt with the case of supply, the case of demand is trivial. The only substantial difference is in $\varphi_d (n)$ , which in this case will be equal to</p>
-<p>$$ \varphi_d (n) = \sum_ {k = n} ^ \infty \Pi_d (k), \tag {14} $$</p>
-<p>where we see that it tends to 1 as $n$ has 0 and 0 as $n$ tends to infinity. We get like this</p>
-<p>$$ \langle \bar \Delta (n) \rangle = Q (N_d, {q_i }) \varphi_d (n). \tag {15} $$</p>
-<h1 id="conclusion">Conclusion</h1>
-<p>We have been able to obtain a model that describes the general characteristics of supply and demand. Although this depends to a large extent on the probability distribution assigned to the $p_i$ , it constitutes a powerful framework when it comes to research the behaviour of collective supply and demand in a given market, as well as in the dynamics that are derived that market from these. In future publications, we will obtain the supply and demand curves that derive from different probability distributions.</p>
+<p><span class="math display">\[\langle\bar \Omega (n) \rangle = Q (N_o, \{q_i \}) \varphi_o (n),\tag{14}\]</span></p>
+<p>where <span class="math inline">\(Q (N_o, \{q_i \}) = \sum_ {i = 1} ^ {N_o} \frac{1}{1-q_i}\)</span>, whose minimum value is <span class="math inline">\(N_o\)</span> for the case in which all the <span class="math inline">\(q_i\)</span> are equal to 0 and tends to infinity when any of the <span class="math inline">\(q_i\)</span> goes to 1, and <span class="math inline">\(\varphi_o (n) = \sum_ {k = 0} ^ n \Pi_o (k)\)</span>, which tends to 0 when <span class="math inline">\(n\)</span> goes to 0, and goes to 1 when <span class="math inline">\(n\)</span> goes to infinity.</p>
+</div>
+<div id="the-demand-case" class="section level1">
+<h1>The demand case</h1>
+<p>Having dealt with the case of supply, the case of demand is trivial. The only substantial difference is in <span class="math inline">\(\varphi_d (n)\)</span>, which in this case will be equal to</p>
+<p><span class="math display">\[\varphi_d(n) = \sum_ {k = n} ^ \infty \Pi_d (k),\tag{15}\]</span></p>
+<p>where we see that it tends to 1 as <span class="math inline">\(n\)</span> has 0 and 0 as <span class="math inline">\(n\)</span> tends to infinity. We get like this</p>
+<p><span class="math display">\[\langle \bar \Delta (n) \rangle = Q (N_d, \{q_i \}) \varphi_d (n).\tag{16}\]</span></p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>We have been able to obtain a model that describes the general characteristics of supply and demand. Although this depends to a large extent on the probability distribution assigned to the <span class="math inline">\(p_i\)</span>, it constitutes a powerful framework when it comes to research the behaviour of collective supply and demand in a given market, as well as in the dynamics that are derived that market from these. In future publications, we will obtain the supply and demand curves that derive from different probability distributions.</p>
+</div>
 
     </div>
 
@@ -761,84 +782,6 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
 
 <div class="share-box" aria-hidden="true">
   <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/a-toy-model-for-supply-and-demand/&amp;text=A%20toy%20model%20for%20supply%20and%20demand" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/a-toy-model-for-supply-and-demand/&amp;t=A%20toy%20model%20for%20supply%20and%20demand" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=A%20toy%20model%20for%20supply%20and%20demand&amp;body=/post/a-toy-model-for-supply-and-demand/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/a-toy-model-for-supply-and-demand/&amp;title=A%20toy%20model%20for%20supply%20and%20demand" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=A%20toy%20model%20for%20supply%20and%20demand%20/post/a-toy-model-for-supply-and-demand/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/a-toy-model-for-supply-and-demand/&amp;title=A%20toy%20model%20for%20supply%20and%20demand" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
     
   </ul>
 </div>
@@ -874,7 +817,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
     <div class="media-body">
       <h5 class="card-title">Pablo Barbancho Martín</h5>
       <h6 class="card-subtitle">Student</h6>
-      <p class="card-text">An average student with outstanding curiosities.</p>
+      <p class="card-text">An average student with remarkable curiosities.</p>
       <ul class="network-icon" aria-hidden="true">
   
     
@@ -906,7 +849,7 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
       
     
     <li>
-      <a href="https://twitter.com/pbarbancho" target="_blank" rel="noopener">
+      <a href="https://twitter.com/pbarbancho_" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
@@ -970,13 +913,49 @@ Abstract A toy model for supply and demand is derived from the knowledge of the 
   
 
   <p class="powered-by">
-    
+    © 2021
   </p>
 
   
   
 
 
+
+
+
+  
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
 
 
 

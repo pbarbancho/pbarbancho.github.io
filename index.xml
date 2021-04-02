@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Pablo Barbancho Martín</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Pablo Barbancho Martín</title>
@@ -13,389 +13,85 @@
     </image>
     
     <item>
-      <title>Python basics</title>
-      <link>/courses/example/python/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/example/python/</guid>
-      <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/rfscVS0vtbw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;What is the difference between lists and tuples?&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;Lists&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lists are mutable - they can be changed&lt;/li&gt;
-&lt;li&gt;Slower than tuples&lt;/li&gt;
-&lt;li&gt;Syntax: &lt;code&gt;a_list = [1, 2.0, &#39;Hello world&#39;]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tuples&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li&gt;
-&lt;li&gt;Tuples are faster than lists&lt;/li&gt;
-&lt;li&gt;Syntax: &lt;code&gt;a_tuple = (1, 2.0, &#39;Hello world&#39;)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Is Python case-sensitive?&lt;/summary&gt;
-  &lt;p&gt;Yes&lt;/p&gt;
-&lt;/details&gt;</description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>/courses/example/visualization/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/example/visualization/</guid>
-      <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/hSPmj7mK6ng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plotly.express as px
-data_canada = px.data.gapminder().query(&amp;quot;country == &#39;Canada&#39;&amp;quot;)
-fig = px.bar(data_canada, x=&#39;year&#39;, y=&#39;pop&#39;)
-fig.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/p&gt;
-&lt;/details&gt;</description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>/courses/example/stats/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/example/stats/</guid>
-      <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
-&lt;p&gt;The general form of the &lt;strong&gt;normal&lt;/strong&gt; probability density function is:&lt;/p&gt;
-&lt;p&gt;$$
-f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-$$&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    The parameter $\mu$ is the mean or expectation of the distribution.
-$\sigma$ is its standard deviation.
-The variance of the distribution is $\sigma^{2}$.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;What is the parameter $\mu$?&lt;/summary&gt;
-  &lt;p&gt;The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p&gt;
-&lt;/details&gt;</description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example-talk/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>A toy model for supply and demand</title>
       <link>/post/a-toy-model-for-supply-and-demand/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       <guid>/post/a-toy-model-for-supply-and-demand/</guid>
-      <description>&lt;p&gt;% A toy model for supply and demand
-% Pablo Barbancho Martín
-% April 1st, 2021&lt;/p&gt;
-&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+      <description>
+&lt;script src=&#34;/post/a-toy-model-for-supply-and-demand/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
 &lt;p&gt;A toy model for supply and demand is derived from the knowledge of the probability distribution for the prices that different agents consider fair for a certain good. The model obtained shows the expected characteristics of supply and demand curves and allows further development in market dynamics.&lt;/p&gt;
-&lt;h1 id=&#34;statement-of-the-problem&#34;&gt;Statement of the problem&lt;/h1&gt;
+&lt;div id=&#34;statement-of-the-problem&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Statement of the problem&lt;/h1&gt;
 &lt;p&gt;We want to model the collective behaviour of a set of agents that participate in the buying and selling of a certain good. Each of these agents will buy or sell depending on whether the price reached by the good in question is a price they consider fair or not. Besides, this quantity does not have to be unique, depending on this price they may decide to buy or sell a larger or smaller quantity. Considering, for example, a seller agent, this follows a scheme such as this.&lt;/p&gt;
-&lt;p&gt;Such an agent will decide to supply an amount of $c_1$ if the good reaches a price of $p_1$ , an amount of $c_2$ if it reaches a price of $p_2$ and so on. If we call $\lim_{i \rightarrow \infty} c_i = M$ and assuming that the higher the price, the greater the quantity supplied (law of supply), we can write the supply function as&lt;/p&gt;
-&lt;p&gt;$$ o (p) = \sum_{i = 1} ^ M \theta (p-p_i), $$&lt;/p&gt;
-&lt;p&gt;where $\theta(x)$ is the Heaviside step function given by&lt;/p&gt;
-&lt;p&gt;$$ \theta (x) = \left{\begin{matrix} 0, &amp;amp; \text{if } x &amp;lt;0  \ 1, &amp;amp; \text{if } x \geq 0 \end{matrix} \right. $$&lt;/p&gt;
+&lt;p&gt;Such an agent will decide to supply an amount of &lt;span class=&#34;math inline&#34;&gt;\(c_1\)&lt;/span&gt; if the good reaches a price of &lt;span class=&#34;math inline&#34;&gt;\(p_1\)&lt;/span&gt;, an amount of &lt;span class=&#34;math inline&#34;&gt;\(c_2\)&lt;/span&gt; if it reaches a price of &lt;span class=&#34;math inline&#34;&gt;\(p_2\)&lt;/span&gt; and so on. If we call &lt;span class=&#34;math inline&#34;&gt;\(\lim_{i \rightarrow \infty} c_i = M\)&lt;/span&gt; and assuming that the higher the price, the greater the quantity supplied (law of supply), we can write the supply function as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[o(p) = \sum_{i = 1} ^ M \theta (p-p_i),\tag{1}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\theta(x)\)&lt;/span&gt; is the Heaviside step function given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\theta(x)=\left\{
+    \begin{array}{rr}
+    0, &amp;amp; \text{if } x &amp;lt;0  \\ 
+    1, &amp;amp; \text{if } x \geq 0 
+    \end{array}
+    \right..
+\tag{2}
+\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;In the case of a buyer agent, and taking into account the law of demand, it is only needed to change the sign of the argument of the Heaviside function to obtain&lt;/p&gt;
-&lt;p&gt;$$ d(p) = \sum_{i = 1} ^ M \theta (p_i-p).$$&lt;/p&gt;
-&lt;p&gt;With that said, our objective is, discarding the possibility of knowing the $p_i$ for all the participating agents, to obtain some functions $O (p)$ and $D (p)$ that describe the collective behaviour of the agents selling and buying, respectively, from the knowledge of the probability distribution of the $p_i$ .&lt;/p&gt;
-&lt;h1 id=&#34;previous-assumptions&#34;&gt;Previous assumptions&lt;/h1&gt;
-&lt;p&gt;In the first place, we are going to assume a number $N_o$ of agents that sell the good under study, as well as a number $N_d$ of agents that buy that same good. Besides, we assume the knowledge of the probability distributions $P_o (p_i)$ and $P_d (p_i)$ of the $p_i$ of both sellers and buyers as groups.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[d(p)=\sum_{i = 1}^M\theta(p_i-p).\tag{3}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;With that said, our objective is, discarding the possibility of knowing the &lt;span class=&#34;math inline&#34;&gt;\(p_i\)&lt;/span&gt; for all the participating agents, to obtain some functions &lt;span class=&#34;math inline&#34;&gt;\(O (p)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(D (p)\)&lt;/span&gt; that describe the collective behaviour of the agents selling and buying, respectively, from the knowledge of the probability distribution of the &lt;span class=&#34;math inline&#34;&gt;\(p_i\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;previous-assumptions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Previous assumptions&lt;/h1&gt;
+&lt;p&gt;In the first place, we are going to assume a number &lt;span class=&#34;math inline&#34;&gt;\(N_o\)&lt;/span&gt; of agents that sell the good under study, as well as a number &lt;span class=&#34;math inline&#34;&gt;\(N_d\)&lt;/span&gt; of agents that buy that same good. Besides, we assume the knowledge of the probability distributions &lt;span class=&#34;math inline&#34;&gt;\(P_o (p_i)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(P_d (p_i)\)&lt;/span&gt; of the &lt;span class=&#34;math inline&#34;&gt;\(p_i\)&lt;/span&gt; of both sellers and buyers as groups.&lt;/p&gt;
 &lt;p&gt;We will also assume that the agents do not interact with each other, that is, there is no correlation between the quantities supplied (demanded) by the different agents.&lt;/p&gt;
-&lt;p&gt;Finally, we will assume that a specific agent, given that at a particular price has sold (bought) a unit of the good, there is a probability $q_i$ that it will sell (buy) an additional unit and that this remains constant as we increase. the quantity supplied (demanded).&lt;/p&gt;
-&lt;h1 id=&#34;the-supply-case&#34;&gt;The supply case&lt;/h1&gt;
-&lt;p&gt;Let&amp;rsquo;s start by dealing with the case of the offer. Given the functions $o_i (p)$ of each of the selling agents, total or aggregate supply will be given by&lt;/p&gt;
-&lt;p&gt;$$ O (p) = \sum_ {i = 1} ^ {N_o} o_i (p). $$&lt;/p&gt;
-&lt;p&gt;If we stop to think about the nature of prices $p$ , they represent the conversion factor, in terms of value, between a certain good and another that we consider as a standard. Therefore we will have $p \in \mathbb{Q}$ . But it is a known result that $\mathbb{Q}$ is a countable set, so we can put $\mathbb{Q}$ in one-to-one correspondence with $\mathbb{N}$ . Let&amp;rsquo;s say that we establish this correspondence through $\phi: \mathbb{Q} \rightarrow \mathbb{N}$ . In this way, we are going to make a variable change, and we are going to study supply as a function of $n = \phi (p)$ , having $p = \phi^{- 1} (n)$ .&lt;/p&gt;
-&lt;p&gt;Thus, we will have a new set of functions $\omega_i (n) = o_i \circ \phi ^ {- 1} (n)$ , as well as a new probability distribution $\Pi_o (n_i) = P_o \circ \phi ^ {-1} (n_i)$ , where $n_i = \phi (p_i)$ . Similarly, the aggregate supply will be represented by&lt;/p&gt;
-&lt;p&gt;$$ \Omega (n) = \sum ^ {N_o} _ {i = 1} \omega_i (n).$$&lt;/p&gt;
-&lt;p&gt;Remembering how we define the $o_i (p)$ from the Heaviside step function, we have&lt;/p&gt;
-&lt;p&gt;$$ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (\phi ^ {- 1} (n) - \phi ^ {- 1} (n_ {ij})),$$&lt;/p&gt;
-&lt;p&gt;where $n_{ij} = \phi (p_{ij})$ . But since $\phi$ is a bijection, we will have $\phi^{- 1} (n) = \phi^{- 1} (n_{ij})$ , which implies that $n = n_ {ij}$ , and therefore we can rewrite (6) as&lt;/p&gt;
-&lt;p&gt;$$ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (n-n_ {ij}).$$&lt;/p&gt;
-&lt;p&gt;However, knowing the $m_i$ of each of the agents that negotiate in the market seems like a vast task in the first instance. For this reason, we are going to lower our level of knowledge about the agents and we are going to assume that each of them has a probability $q_i$ of selling an additional unit and that this remains constant as we increase the quantity supplied.&lt;/p&gt;
-&lt;p&gt;Thus, we are going to define a function $\bar \omega_i (n)$ that will be given by&lt;/p&gt;
-&lt;p&gt;$$ \bar \omega_i (n) = \sum_ {j = 0} ^ \infty (q_i) ^ j \theta (n-n_ {ij}),$$&lt;/p&gt;
+&lt;p&gt;Finally, we will assume that a specific agent, given that at a particular price has sold (bought) a unit of the good, there is a probability &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt; that it will sell (buy) an additional unit and that this remains constant as we increase. the quantity supplied (demanded).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-supply-case&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The supply case&lt;/h1&gt;
+&lt;p&gt;Let’s start by dealing with the case of the offer. Given the functions &lt;span class=&#34;math inline&#34;&gt;\(o_i (p)\)&lt;/span&gt; of each of the selling agents, total or aggregate supply will be given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[O(p) = \sum_ {i = 1} ^ {N_o} o_i (p).\tag{4}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If we stop to think about the nature of prices &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, they represent the conversion factor, in terms of value, between a certain good and another that we consider as a standard. Therefore we will have &lt;span class=&#34;math inline&#34;&gt;\(p \in \mathbb{Q}\)&lt;/span&gt;. But it is a known result that &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{Q}\)&lt;/span&gt; is a countable set, so we can put &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{Q}\)&lt;/span&gt; in one-to-one correspondence with &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;. Let’s say that we establish this correspondence through &lt;span class=&#34;math inline&#34;&gt;\(\phi: \mathbb{Q} \rightarrow \mathbb{N}\)&lt;/span&gt;. In this way, we are going to make a variable change, and we are going to study supply as a function of &lt;span class=&#34;math inline&#34;&gt;\(n = \phi (p)\)&lt;/span&gt;, having &lt;span class=&#34;math inline&#34;&gt;\(p = \phi^{- 1} (n)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Thus, we will have a new set of functions &lt;span class=&#34;math inline&#34;&gt;\(\omega_i (n) = o_i \circ \phi ^ {- 1} (n)\)&lt;/span&gt;, as well as a new probability distribution &lt;span class=&#34;math inline&#34;&gt;\(\Pi_o (n_i) = P_o \circ \phi ^ {-1} (n_i)\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(n_i = \phi (p_i)\)&lt;/span&gt;. Similarly, the aggregate supply will be represented by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\Omega (n) = \sum ^ {N_o} _ {i = 1} \omega_i (n).\tag{5}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Remembering how we define the &lt;span class=&#34;math inline&#34;&gt;\(o_i (p)\)&lt;/span&gt; from the Heaviside step function, we have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (\phi ^ {- 1} (n) - \phi ^ {- 1} (n_ {ij})),\tag{6}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(n_{ij} = \phi (p_{ij})\)&lt;/span&gt;. But since &lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt; is a bijection, we will have &lt;span class=&#34;math inline&#34;&gt;\(\phi^{- 1} (n) = \phi^{- 1} (n_{ij})\)&lt;/span&gt;, which implies that &lt;span class=&#34;math inline&#34;&gt;\(n = n_ {ij}\)&lt;/span&gt;, and therefore we can rewrite (6) as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \omega_i (n) = \sum_ {j = 1} ^ {m_i} \theta (n-n_ {ij}).\tag{7}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;However, knowing the &lt;span class=&#34;math inline&#34;&gt;\(m_i\)&lt;/span&gt; of each of the agents that negotiate in the market seems like a vast task in the first instance. For this reason, we are going to lower our level of knowledge about the agents and we are going to assume that each of them has a probability &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt; of selling an additional unit and that this remains constant as we increase the quantity supplied.&lt;/p&gt;
+&lt;p&gt;Thus, we are going to define a function &lt;span class=&#34;math inline&#34;&gt;\(\bar \omega_i (n)\)&lt;/span&gt; that will be given by&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \bar \omega_i (n) = \sum_ {j = 0} ^ \infty (q_i) ^ j \theta (n-n_ {ij}),\tag{8}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;through which we also define&lt;/p&gt;
-&lt;p&gt;$$ \bar \Omega (n) = \sum_ {i = 1} ^ {N_o} \bar \omega_i (n),$$&lt;/p&gt;
-&lt;p&gt;and we are going to establish, with no proof, that $\lim_{N_o \rightarrow \infty} \bar \Omega (n) = \Omega (n)$ . Thus, when $N_o$ is large enough, studying $\bar \Omega (n)$ will be almost equivalent to studying $\Omega (n)$ , and in particular $\langle \bar \Omega (n) \rangle = \langle \Omega (n) \rangle$ .&lt;/p&gt;
-&lt;p&gt;Until now, implicitly, we have assumed that the $p_ {ij}$ (and consequently the $n_ {ij}$ ) are known, but the only thing we know is their probability distribution. Therefore, we are going to average $\bar \Omega (n)$ to eliminate this dependency on the $n_ {ij}$ . Since we have assumed that agents do not interact with each other, we will have&lt;/p&gt;
-&lt;p&gt;$$ \langle \bar \Omega (n) \rangle = \sum_ {i = 1} ^ {N_o} \langle \bar \omega_i (n) \rangle.$$&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \bar \Omega (n) = \sum_ {i = 1} ^ {N_o} \bar \omega_i (n),\tag{9}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and we are going to establish, with no proof, that &lt;span class=&#34;math inline&#34;&gt;\(\lim_{N_o \rightarrow \infty} \bar \Omega (n) = \Omega (n)\)&lt;/span&gt;. Thus, when &lt;span class=&#34;math inline&#34;&gt;\(N_o\)&lt;/span&gt; is large enough, studying &lt;span class=&#34;math inline&#34;&gt;\(\bar \Omega (n)\)&lt;/span&gt; will be almost equivalent to studying &lt;span class=&#34;math inline&#34;&gt;\(\Omega (n)\)&lt;/span&gt;, and in particular &lt;span class=&#34;math inline&#34;&gt;\(\langle \bar \Omega (n) \rangle = \langle \Omega (n) \rangle\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Until now, implicitly, we have assumed that the &lt;span class=&#34;math inline&#34;&gt;\(p_ {ij}\)&lt;/span&gt; (and consequently the &lt;span class=&#34;math inline&#34;&gt;\(n_ {ij}\)&lt;/span&gt;) are known, but the only thing we know is their probability distribution. Therefore, we are going to average &lt;span class=&#34;math inline&#34;&gt;\(\bar \Omega (n)\)&lt;/span&gt; to eliminate this dependency on the &lt;span class=&#34;math inline&#34;&gt;\(n_ {ij}\)&lt;/span&gt;. Since we have assumed that agents do not interact with each other, we will have&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \langle \bar \Omega (n) \rangle = \sum_ {i = 1} ^ {N_o} \langle \bar \omega_i (n) \rangle.\tag{10}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Thus, taking (7) into account, we will have&lt;/p&gt;
-&lt;p&gt;$$ \begin {matrix} \langle \bar \omega_i (n) \rangle &amp;amp; = &amp;amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \langle \theta (n-n_ {ij}) \rangle , \ &amp;amp; = &amp;amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}), \ \end {matrix} \tag {10} $$&lt;/p&gt;
-&lt;p&gt;and since in general $n_ {ij} \in [0, \infty)$ , we will have $\sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}) = \sum_ {k = 0} ^ \infty \theta (n-k) \Pi_o (k)$ , but taking into account the definition of the step function, we will have $\sum_ {k = 0} ^ \infty \theta (n-k ) \Pi_o (k) = \sum_ {k = 0} ^ n \Pi_o (k)$ . In this way, we will have that (10) becomes&lt;/p&gt;
-&lt;p&gt;$$ \langle \bar \omega_i (n) \rangle = (\sum_ {j = 0} ^ \infty (q_i) ^ j) (\sum_ {k = 0} ^ n \Pi_o (k)). \tag {11} $$&lt;/p&gt;
-&lt;p&gt;Since $q_i$ represents a probability, it will take values between 0 and 1. Disregarding the case $q_i = 1$ we will have a geometric series of ratio $q_i$ , so (11) is equivalent to&lt;/p&gt;
-&lt;p&gt;$$ \langle \bar \omega_i (n) \rangle = \dfrac {\sum_ {k = 0} ^ n \Pi_o (k)} {1-q_i}, \tag {12} $$&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned} 
+\langle \bar \omega_i (n) \rangle &amp;amp; = &amp;amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \langle \theta (n-n_ {ij})\rangle, 
+\\ &amp;amp; = &amp;amp; \sum_ {j = 0} ^ \infty (q_i) ^ j \sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}), \\ 
+\end{aligned} 
+\tag {11}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and since in general &lt;span class=&#34;math inline&#34;&gt;\(n_ {ij} \in [0, \infty)\)&lt;/span&gt;, we will have &lt;span class=&#34;math inline&#34;&gt;\(\sum_ {n_ {ij}} \theta (n-n_ {ij}) \Pi_o (n_ {ij}) = \sum_ {k = 0} ^ \infty \theta (n-k) \Pi_o (k)\)&lt;/span&gt;, but taking into account the definition of the step function, we will have &lt;span class=&#34;math inline&#34;&gt;\(\sum_ {k = 0} ^ \infty \theta (n-k ) \Pi_o (k) = \sum_ {k = 0} ^ n \Pi_o (k)\)&lt;/span&gt;. In this way, we will have that (11) becomes&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\langle \bar \omega_i (n) \rangle = (\sum_ {j = 0} ^ \infty (q_i) ^ j) (\sum_ {k = 0} ^ n \Pi_o (k)).\tag{12}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt; represents a probability, it will take values between 0 and 1. Disregarding the case &lt;span class=&#34;math inline&#34;&gt;\(q_i = 1\)&lt;/span&gt; we will have a geometric series of ratio &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt;, so (11) is equivalent to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\langle \bar \omega_i (n) \rangle = \dfrac {\sum_ {k = 0} ^ n \Pi_o (k)} {1-q_i},\tag{13}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;that introduced in (9) leads us to&lt;/p&gt;
-&lt;p&gt;$$ \langle\bar \Omega (n) \rangle = Q (N_o, {q_i }) \varphi_o (n), \tag {13} $$&lt;/p&gt;
-&lt;p&gt;where $Q (N_o, {q_i }) = \sum_ {i = 1} ^ {N_o} \frac{1}{1-q_i}$ , whose minimum value is $N_o$ for the case in which all the $q_i$ are equal to 0 and tends to infinity when any of the $q_i$ goes to 1, and $\varphi_o (n) = \sum_ {k = 0} ^ n \Pi_o (k)$ , which tends to 0 when $n$ goes to 0, and goes to 1 when $n$ goes to infinity.&lt;/p&gt;
-&lt;h1 id=&#34;the-demand-case&#34;&gt;The demand case&lt;/h1&gt;
-&lt;p&gt;Having dealt with the case of supply, the case of demand is trivial. The only substantial difference is in $\varphi_d (n)$ , which in this case will be equal to&lt;/p&gt;
-&lt;p&gt;$$ \varphi_d (n) = \sum_ {k = n} ^ \infty \Pi_d (k), \tag {14} $$&lt;/p&gt;
-&lt;p&gt;where we see that it tends to 1 as $n$ has 0 and 0 as $n$ tends to infinity. We get like this&lt;/p&gt;
-&lt;p&gt;$$ \langle \bar \Delta (n) \rangle = Q (N_d, {q_i }) \varphi_d (n). \tag {15} $$&lt;/p&gt;
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;We have been able to obtain a model that describes the general characteristics of supply and demand. Although this depends to a large extent on the probability distribution assigned to the $p_i$ , it constitutes a powerful framework when it comes to research the behaviour of collective supply and demand in a given market, as well as in the dynamics that are derived that market from these. In future publications, we will obtain the supply and demand curves that derive from different probability distributions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Demo post</title>
-      <link>/post/demo-post/</link>
-      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>/post/demo-post/</guid>
-      <description>&lt;p&gt;This post is just a demo. Here is a $\LaTeX$ equation.
-$$\int 3x^2dx=x^3+C.$$&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\langle\bar \Omega (n) \rangle = Q (N_o, \{q_i \}) \varphi_o (n),\tag{14}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Q (N_o, \{q_i \}) = \sum_ {i = 1} ^ {N_o} \frac{1}{1-q_i}\)&lt;/span&gt;, whose minimum value is &lt;span class=&#34;math inline&#34;&gt;\(N_o\)&lt;/span&gt; for the case in which all the &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt; are equal to 0 and tends to infinity when any of the &lt;span class=&#34;math inline&#34;&gt;\(q_i\)&lt;/span&gt; goes to 1, and &lt;span class=&#34;math inline&#34;&gt;\(\varphi_o (n) = \sum_ {k = 0} ^ n \Pi_o (k)\)&lt;/span&gt;, which tends to 0 when &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; goes to 0, and goes to 1 when &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; goes to infinity.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/media/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
+&lt;div id=&#34;the-demand-case&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The demand case&lt;/h1&gt;
+&lt;p&gt;Having dealt with the case of supply, the case of demand is trivial. The only substantial difference is in &lt;span class=&#34;math inline&#34;&gt;\(\varphi_d (n)\)&lt;/span&gt;, which in this case will be equal to&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\varphi_d(n) = \sum_ {k = n} ^ \infty \Pi_d (k),\tag{15}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where we see that it tends to 1 as &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; has 0 and 0 as &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; tends to infinity. We get like this&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\langle \bar \Delta (n) \rangle = Q (N_d, \{q_i \}) \varphi_d (n).\tag{16}\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;We have been able to obtain a model that describes the general characteristics of supply and demand. Although this depends to a large extent on the probability distribution assigned to the &lt;span class=&#34;math inline&#34;&gt;\(p_i\)&lt;/span&gt;, it constitutes a powerful framework when it comes to research the behaviour of collective supply and demand in a given market, as well as in the dynamics that are derived that market from these. In future publications, we will obtain the supply and demand curves that derive from different probability distributions.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
